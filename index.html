@@ -415,9 +415,35 @@
     <script>
       var map;
       
-      var positionOfChoice1 = { lat: -34.397, lng: 150.644 };
-
-      var positionOfChoice2 = { lat: -34.397, lng: 151 };
+      var US_SFO = { lat: 37.774929, lng: -122.419418 };
+      var US_Oakland = { lat: 37.804363, lng: -122.271111 };
+      var US_Berkeley = { lat: 37.871593, lng: -122.272743 };
+      var US_PDX = { lat: 45.512230, lng: -122.658722 };
+      var US_SEA = { lat: 47.606209, lng: -122.332069 };
+      var US_JFK = { lat: 40.712776, lng: -74.005974 };
+      var US_OHA = { lat: 41.878113, lng: -87.629799 };
+      var US_Champaign = { lat: 40.116329, lng: -88.243523 };
+      
+      var UE_London = { lat: 51.507351, lng: -0.127758 };
+      var UE_Berlin = { lat: 52.520008, lng: 13.404954 };
+      var UE_Vienne = { lat: 48.208176, lng: 16.373819 };
+      var UE_Florence = { lat: 43.769562, lng: 11.255814 };
+      var UE_Pisa = { lat: 43.722839, lng: 10.401689 };
+      var UE_Inverness = { lat: 57.476690, lng: -4.231450 };
+      var UE_Elgin = { lat: 57.646380, lng: -3.315350 };
+      var UE_Krakow = { lat: 50.064651, lng: 19.944981 };
+      var UE_Amsterdam = { lat: 52.370216, lng: 4.895168 };
+      
+      var FR_Paris = { lat: 48.856613, lng: 2.352222 };
+      var FR_Nantes = { lat: 47.218372, lng: -1.553621 };
+      var FR_Bordeaux = { lat: 44.837788, lng: -0.579180 };
+      var FR_Lille = { lat: 50.629250, lng: 3.057256 };
+      var FR_Marseille = { lat: 43.296482, lng: 5.369780 };
+      var FR_Lyon = { lat: 45.764042, lng: 4.835659 };
+      var FR_LeHavre = { lat: 49.494370, lng: 0.107929 };
+      var FR_Compiegne = { lat: 49.417816, lng: 2.826145 };
+      var FR_Angouleme = { lat: 50, lng: 2 };
+      var FR_LaRochelle = { lat: 45, lng: 3 };
 
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
@@ -426,17 +452,143 @@
         });
 
         var marker = new google.maps.Marker({
-          position: positionOfChoice1,
+          position: US_SFO,
           map: map,
-          title: 'Hello World!'
+          title: 'San Francisco, CA'
         });
-
         var marker = new google.maps.Marker({
-          position: positionOfChoice2,
+          position: US_Oakland,
+          map: map,
+          title: 'Oakland, CA'
+        });
+        var marker = new google.maps.Marker({
+          position: US_Berkeley,
+          map: map,
+          title: 'Berkeley, CA'
+        });
+        var marker = new google.maps.Marker({
+          position: US_PDX,
+          map: map,
+          title: 'Portland, OR'
+        });
+        var marker = new google.maps.Marker({
+          position: US_SEA,
+          map: map,
+          title: 'Seattle, WA'
+        });
+        var marker = new google.maps.Marker({
+          position: US_JFK,
+          map: map,
+          title: 'New York, NY'
+        });
+        var marker = new google.maps.Marker({
+          position: US_OHA,
           map: map,
           title: 'Hello World2!'
         });
-
+        var marker = new google.maps.Marker({
+          position: US_Champaign,
+          map: map,
+          title: 'San Francisco, CA'
+        });
+                
+        var marker = new google.maps.Marker({
+          position: UE_London,
+          map: map,
+          title: 'London, England'
+        });
+        var marker = new google.maps.Marker({
+          position: UE_Berlin,
+          map: map,
+          title: 'Berlin, Germany'
+        });
+        var marker = new google.maps.Marker({
+          position: UE_Vienne,
+          map: map,
+          title: 'Vienna, Austria'
+        });
+        var marker = new google.maps.Marker({
+          position: UE_Florence,
+          map: map,
+          title: 'Florence, Italy'
+        });
+        var marker = new google.maps.Marker({
+          position: UE_Pisa,
+          map: map,
+          title: 'Pisa, Italy'
+        });
+        var marker = new google.maps.Marker({
+          position: UE_Inverness,
+          map: map,
+          title: 'Inverness, Scotland'
+        });
+        var marker = new google.maps.Marker({
+          position: UE_Elgin,
+          map: map,
+          title: 'Elgin, Scotland'
+        });
+        var marker = new google.maps.Marker({
+          position: UE_Krakow,
+          map: map,
+          title: 'Krakow, Poland'
+        });
+        var marker = new google.maps.Marker({
+          position: UE_Amsterdam,
+          map: map,
+          title: 'Amsterdam, Netherlands'
+        });
+        
+       
+        var marker = new google.maps.Marker({
+          position: FR_Paris,
+          map: map,
+          title: 'Paris, France'
+        });
+        var marker = new google.maps.Marker({
+          position: FR_Nantes,
+          map: map,
+          title: 'Nantes, France'
+        });
+        var marker = new google.maps.Marker({
+          position: FR_Bordeaux,
+          map: map,
+          title: 'Bordeaux, France'
+        });
+        var marker = new google.maps.Marker({
+          position: FR_Lille,
+          map: map,
+          title: 'Lille, France'
+        });
+        var marker = new google.maps.Marker({
+          position: FR_Marseille,
+          map: map,
+          title: 'Marseille, France'
+        });var marker = new google.maps.Marker({
+          position: FR_Lyon,
+          map: map,
+          title: 'Lyon, France'
+        });
+        var marker = new google.maps.Marker({
+          position: FR_LeHavre,
+          map: map,
+          title: 'Le Havre, France'
+        });
+        var marker = new google.maps.Marker({
+          position: FR_Compiegne,
+          map: map,
+          title: 'Compiègne, France'
+        });
+        var marker = new google.maps.Marker({
+          position: FR_Angouleme,
+          map: map,
+          title: 'Angoulême, France'
+        });
+        var marker = new google.maps.Marker({
+          position: FR_LaRochelle,
+          map: map,
+          title: 'La Rochelle, France'
+        });
+        
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFflT836XcAinjHQhp-JfM3piRcP7QmTU&callback=initMap" async defer></script>
@@ -685,9 +837,9 @@
                   I worked on the programming of several urban activators to enhance the leverage of existing and
                   future projects.</p>
                 <ul class="list-inline">
-                  <li><font color="rgb(192,0,0)">Date: Spring 2017</font></li>
-                  <li><font color="rgb(192,0,0)">Client: Ergapolis, Rouen Métropole, Ville de Rouen, AURBSE</font></li>
-                  <li><font color="rgb(192,0,0)">Category: Urban Design, Urban Programming, GIS, Adobe Illustrator, Adobe InDesign, Oral Speeches</font></li>
+                  <li>Date: Spring 2017</li>
+                  <li>Client: Ergapolis, Rouen Métropole, Ville de Rouen, AURBSE</li>
+                  <li>Category: Urban Design, Urban Programming, GIS, Adobe Illustrator, Adobe InDesign, Oral Speeches</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
@@ -727,9 +879,9 @@
                   and sustainability constraints, we proposed an urban program focused on the transition urban-forest
                 </p>
                 <ul class="list-inline">
-                  <li><font color="rgb(192,0,0)">Date: Spring 2018</font></li>
-                  <li><font color="rgb(192,0,0)">Client: -</font></li>
-                  <li><font color="rgb(192,0,0)">Category: Urban Design, Urban Programming, GIS, Adobe Illustrator, Adobe InDesign</font></li>
+                  <li>Date: Spring 2018</li>
+                  <li>Client: -</li>
+                  <li>Category: Urban Design, Urban Programming, GIS, Adobe Illustrator, Adobe InDesign</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
@@ -771,9 +923,9 @@
                   park.
                 </p>
                 <ul class="list-inline">
-                  <li><font color="rgb(192,0,0)">Date: Spring 2017</font></li>
-                  <li><font color="rgb(192,0,0)">Client: CCI Grand Lille, Métropole Européenne de Lille, Ville de Lesquin</font></li>
-                  <li><font color="rgb(192,0,0)">Category: Urban Programming, Interviews, Stakeholders Engagement, Adobe Illustrator</font></li>
+                  <li>Date: Spring 2017</li>
+                  <li>Client: CCI Grand Lille, Métropole Européenne de Lille, Ville de Lesquin</li>
+                  <li>Category: Urban Programming, Interviews, Stakeholders Engagement, Adobe Illustrator</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
@@ -813,9 +965,9 @@
                   campus, I helped identifying the lacks and surplus of services on campus.
                 </p>
                 <ul class="list-inline">
-                  <li><font color="rgb(192,0,0)">Date: Spring 2017</font></li>
-                  <li><font color="rgb(192,0,0)">Client: -</font></li>
-                  <li><font color="rgb(192,0,0)">Category: Urban Design, Adobe Illustrator, Adobe InDesign, Placemaking</font></li>
+                  <li>Date: Spring 2017</li>
+                  <li>Client: -</li>
+                  <li>Category: Urban Design, Adobe Illustrator, Adobe InDesign, Placemaking</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
@@ -849,9 +1001,9 @@
                   <br><br> As a Ville Ouverte intern, I intervened during the diagnosis phase of this project, for which I conducted a couple of interview with scholar stakeholders and students. Through a deep understanding of the university, local public organization and students’ needs for future uses of the campus, I helped identifying the lacks and surplus of services on campus.
                 </p>
                 <ul class="list-inline">
-                  <li><font color="rgb(192,0,0)">Date: Spring 2017</font></li>
-                  <li><font color="rgb(192,0,0)">Client: Établissement Public d’Aménagement de Paris-Saclay, Université Paris-Sud, Ville d’Orsay</font></li>
-                  <li><font color="rgb(192,0,0)">Category: Urban Programming, Interviews, Adobe Illustrator</font></li>
+                  <li>Date: Spring 2017</li>
+                  <li>Client: Établissement Public d’Aménagement de Paris-Saclay, Université Paris-Sud, Ville d’Orsay</li>
+                  <li>Category: Urban Programming, Interviews, Adobe Illustrator</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
