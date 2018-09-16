@@ -415,15 +415,6 @@
     <script>
       var map;
       
-      var US_SFO = { lat: 37.774929, lng: -122.419418 };
-      var US_Oakland = { lat: 37.804363, lng: -122.271111 };
-      var US_Berkeley = { lat: 37.871593, lng: -122.272743 };
-      var US_PDX = { lat: 45.512230, lng: -122.658722 };
-      var US_SEA = { lat: 47.606209, lng: -122.332069 };
-      var US_JFK = { lat: 40.712776, lng: -74.005974 };
-      var US_OHA = { lat: 41.878113, lng: -87.629799 };
-      var US_Champaign = { lat: 40.116329, lng: -88.243523 };
-      
       var UE_London = { lat: 51.507351, lng: -0.127758 };
       var UE_Berlin = { lat: 52.520008, lng: 13.404954 };
       var UE_Vienne = { lat: 48.208176, lng: 16.373819 };
@@ -447,50 +438,73 @@
 
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: { lat: -34.397, lng: 150.644 },
-          zoom: 8
+          center: { lat: 36, lng: 39 },
+          zoom: 1
         });
 
+      function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+          marker.setAnimation(null);
+        } else {
+          marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+        
         var marker = new google.maps.Marker({
-          position: US_SFO,
+          position: { lat: 37.774929, lng: -122.419418 },
           map: map,
-          title: 'San Francisco, CA'
+          title: 'San Francisco, CA, USA'
+          animation: google.maps.Animation.DROP,
         });
+        marker.addListener('click', toggleBounce);
         var marker = new google.maps.Marker({
-          position: US_Oakland,
+          position: { lat: 37.804363, lng: -122.271111 },
           map: map,
-          title: 'Oakland, CA'
+          title: 'Oakland, CA, USA'
+          animation: google.maps.Animation.DROP,
         });
+        marker.addListener('click', toggleBounce);
         var marker = new google.maps.Marker({
-          position: US_Berkeley,
+          position: { lat: 37.871593, lng: -122.272743 },
           map: map,
-          title: 'Berkeley, CA'
+          title: 'Berkeley, CA, USA'
+          animation: google.maps.Animation.DROP,
         });
+        marker.addListener('click', toggleBounce);
         var marker = new google.maps.Marker({
-          position: US_PDX,
+          position: { lat: 45.512230, lng: -122.658722 },
           map: map,
-          title: 'Portland, OR'
+          title: 'Portland, OR, USA'
+          animation: google.maps.Animation.DROP,
         });
+        marker.addListener('click', toggleBounce);
         var marker = new google.maps.Marker({
-          position: US_SEA,
+          position: { lat: 47.606209, lng: -122.332069 },
           map: map,
-          title: 'Seattle, WA'
+          title: 'Seattle, WA, USA'
+          animation: google.maps.Animation.DROP,
         });
+        marker.addListener('click', toggleBounce);
         var marker = new google.maps.Marker({
-          position: US_JFK,
+          position: { lat: 40.712776, lng: -74.005974 },
           map: map,
-          title: 'New York, NY'
+          title: 'New York, NY, USA'
+          animation: google.maps.Animation.DROP,
         });
+        marker.addListener('click', toggleBounce);
         var marker = new google.maps.Marker({
-          position: US_OHA,
+          position: { lat: 41.878113, lng: -87.629799 },
           map: map,
-          title: 'Hello World2!'
+          title: 'Chicago, IL, USA'
+          animation: google.maps.Animation.DROP,
         });
+        marker.addListener('click', toggleBounce);
         var marker = new google.maps.Marker({
-          position: US_Champaign,
+          position: { lat: 40.116329, lng: -88.243523 },
           map: map,
-          title: 'San Francisco, CA'
+          title: 'Champaign, IL, USA'
+          animation: google.maps.Animation.DROP,
         });
+        marker.addListener('click', toggleBounce);
                 
         var marker = new google.maps.Marker({
           position: UE_London,
