@@ -450,13 +450,6 @@
           center: { lat: 36, lng: 39 },
           zoom: 1
         });
-
-      function toggleBounce() {
-        if (marker.getAnimation() !== null) {
-          marker.setAnimation(null);
-        } else {
-          marker.setAnimation(google.maps.Animation.BOUNCE);
-        }
         
         var marker = new google.maps.Marker({
           position: US_SFO,
