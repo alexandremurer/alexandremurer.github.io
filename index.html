@@ -588,6 +588,14 @@
           title: 'La Rochelle, France'
         });
         
+        function toggleBounce() {
+         if (marker.getAnimation() !== null) {
+          marker.setAnimation(null);
+         } else {
+          marker.setAnimation(google.maps.Animation.BOUNCE);
+         }
+        }
+        
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFflT836XcAinjHQhp-JfM3piRcP7QmTU&callback=initMap" async defer></script>
