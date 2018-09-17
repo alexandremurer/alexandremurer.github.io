@@ -456,6 +456,7 @@
           map: map,
           title: 'San Francisco, CA, USA'
         });
+        marker.addListener('click', toggleBounce);
         var marker = new google.maps.Marker({
           position: US_Oakland,
           map: map,
