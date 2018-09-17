@@ -53,6 +53,10 @@ section {
   padding: 100px 0;
 }
 
+section.map-section {
+  padding-bottom: 0px;
+}
+
 section h2.section-heading {
   font-size: 40px;
   margin-top: 0;
@@ -84,13 +88,13 @@ section h3.section-subheading {
 }
 
 .btn-primary {
-  background-color: rgb(48, 47, 64);
-  border-color: rgb(48, 47, 64);
+  background-color: #fec503;
+  border-color: #fec503;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: rgb(192,0,0) !important;
-  border-color: rgb(192,0,0) !important;
+  background-color: rgb(48, 47, 64) !important;
+  border-color: rgb(48, 47, 64) !important;
   color: white;
 }
 
@@ -738,4 +742,16 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .fa-briefcase {
   background: rgb(192,0,0);
   border-radius: 50%;
+}
+
+#map {
+  position: relative;
+  /* margin: 0 auto 0 auto; */
+  margin-left: 12.5% ;
+  margin-right: 12.5% ;
+  margin-bottom: 100px;
+  /* width: 75%; */
+  /* background: red; */
+  /* border-color: aqua; */
+  /* border-width: 20px; */
 }

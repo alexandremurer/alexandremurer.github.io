@@ -109,7 +109,7 @@
   </header>
 
   <!-- Experiences -->
-  <section id="Experiences">
+  <section id="Experiences" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -142,7 +142,7 @@
   </section>
 
   <!-- About -->
-  <section id="about" class="bg-light">
+  <section id="about">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -306,7 +306,7 @@
   </section>
 
   <!-- Portfolio Grid -->
-  <section id="portfolio">
+  <section id="portfolio" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -405,11 +405,11 @@
   </section>
 
   <!-- Urbex section -->
-  <section id="urbex" class="bg-light">
+  <section id="urbex" class="map-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Map</h2>
+          <h2 class="section-heading text-uppercase">Urban Exploration</h2>
           <h3 class="section-subheading text-muted">
             I've been fortunate to visit various cities in Europe and Northern America. 
             Exploring these places enabled me to gain a global understanding of local planning histories, 
@@ -421,11 +421,11 @@
     </div>
   </section>
   
-  <section id="map">
-   <div class="row">
+  <section id="map" class="bg-light">
+   <!-- <div id ="map" class="row"> -->
     <script>
       var map;
-      
+
       var US_Vegas = { lat: 36.125527, lng: -115.169379 };
       var US_Moab = { lat: 38.5686, lng: -109.5497 };
       var US_SFO = { lat: 37.774929, lng: -122.419418 };
@@ -436,7 +436,7 @@
       var US_JFK = { lat: 40.712776, lng: -74.005974 };
       var US_OHA = { lat: 41.878113, lng: -87.629799 };
       var US_Champaign = { lat: 40.116329, lng: -88.243523 };
-      
+
       var UE_London = { lat: 51.507351, lng: -0.127758 };
       var UE_Berlin = { lat: 52.520008, lng: 13.404954 };
       var UE_Vienne = { lat: 48.208176, lng: 16.373819 };
@@ -447,7 +447,7 @@
       var UE_Krakow = { lat: 50.064651, lng: 19.944981 };
       var UE_Amsterdam = { lat: 52.370216, lng: 4.895168 };
       var UE_Bruges = { lat: 51.203896, lng: 3.224559 };
-      
+
       var FR_Paris = { lat: 48.856613, lng: 2.352222 };
       var FR_Nantes = { lat: 47.218372, lng: -1.553621 };
       var FR_Bordeaux = { lat: 44.837788, lng: -0.579180 };
@@ -463,185 +463,190 @@
 
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: { lat: 40, lng: -35 },
+          center: { lat: 47, lng: -50 },
           zoom: 3
         });
-             
-        var marker = new google.maps.Marker({
+
+        var marker_lv = new google.maps.Marker({
           position: US_Vegas,
           map: map,
           title: 'Las Vegas, NV, USA'
         });
-        var marker = new google.maps.Marker({
+        var marker_mb = new google.maps.Marker({
           position: US_Moab,
           map: map,
           title: 'Moab, UT, USA'
         });
-        var marker = new google.maps.Marker({
+        var marker_sfo = new google.maps.Marker({
           position: US_SFO,
           map: map,
           title: 'San Francisco, CA, USA'
         });
-        marker.addListener('click', toggleBounce);
-        var marker = new google.maps.Marker({
+        
+        var marker_ok = new google.maps.Marker({
           position: US_Oakland,
           map: map,
           title: 'Oakland, CA, USA'
         });
-        var marker = new google.maps.Marker({
+        var marker_bk = new google.maps.Marker({
           position: US_Berkeley,
           map: map,
           title: 'Berkeley, CA, USA'
         });
-        var marker = new google.maps.Marker({
+        var marker_pdx = new google.maps.Marker({
           position: US_PDX,
           map: map,
           title: 'Portland, OR, USA'
         });
-        var marker = new google.maps.Marker({
+        var marker_stl = new google.maps.Marker({
           position: US_SEA,
           map: map,
           title: 'Seattle, WA, USA'
         });
-        var marker = new google.maps.Marker({
+        var marker_jfk = new google.maps.Marker({
           position: US_JFK,
           map: map,
           title: 'New York, NY, USA'
         });
-        var marker = new google.maps.Marker({
+        var marker_chi = new google.maps.Marker({
           position: US_OHA,
           map: map,
           title: 'Chicago, IL, USA'
         });
-        var marker = new google.maps.Marker({
+        var marker_chm = new google.maps.Marker({
           position: US_Champaign,
           map: map,
           title: 'Champaign, IL, USA'
         });
-                
-        var marker = new google.maps.Marker({
+
+        var marker_ldn = new google.maps.Marker({
           position: UE_London,
           map: map,
           title: 'London, England'
         });
-        var marker = new google.maps.Marker({
+        var marker_ber = new google.maps.Marker({
           position: UE_Berlin,
           map: map,
           title: 'Berlin, Germany'
         });
-        var marker = new google.maps.Marker({
+        var marker_vin = new google.maps.Marker({
           position: UE_Vienne,
           map: map,
           title: 'Vienna, Austria'
         });
-        var marker = new google.maps.Marker({
+        var marker_flr = new google.maps.Marker({
           position: UE_Florence,
           map: map,
           title: 'Florence, Italy'
         });
-        var marker = new google.maps.Marker({
+        var marker_pia = new google.maps.Marker({
           position: UE_Pisa,
           map: map,
           title: 'Pisa, Italy'
         });
-        var marker = new google.maps.Marker({
+        var marker_inv = new google.maps.Marker({
           position: UE_Inverness,
           map: map,
           title: 'Inverness, Scotland'
         });
-        var marker = new google.maps.Marker({
+        var marker_elg = new google.maps.Marker({
           position: UE_Elgin,
           map: map,
           title: 'Elgin, Scotland'
         });
-        var marker = new google.maps.Marker({
+        var marker_krk = new google.maps.Marker({
           position: UE_Krakow,
           map: map,
           title: 'Krakow, Poland'
         });
-        var marker = new google.maps.Marker({
+        var marker_ams = new google.maps.Marker({
           position: UE_Amsterdam,
           map: map,
           title: 'Amsterdam, Netherlands'
         });
-        var marker = new google.maps.Marker({
+        var marker_brg = new google.maps.Marker({
           position: UE_Bruges,
           map: map,
           title: 'Brugge, Belgium'
         });
 
-        var marker = new google.maps.Marker({
+        var marker_prs = new google.maps.Marker({
           position: FR_Paris,
           map: map,
           title: 'Paris, France'
         });
-        var marker = new google.maps.Marker({
+        var marker_nnt = new google.maps.Marker({
           position: FR_Nantes,
           map: map,
           title: 'Nantes, France'
         });
-        var marker = new google.maps.Marker({
+        var marker_bdx = new google.maps.Marker({
           position: FR_Bordeaux,
           map: map,
           title: 'Bordeaux, France'
         });
-        var marker = new google.maps.Marker({
+        var marker_lll = new google.maps.Marker({
           position: FR_Lille,
           map: map,
           title: 'Lille, France'
         });
-        var marker = new google.maps.Marker({
+        var marker_mrs = new google.maps.Marker({
           position: FR_Marseille,
           map: map,
           title: 'Marseille, France'
-        });var marker = new google.maps.Marker({
+        }); 
+        var marker_lyn = new google.maps.Marker({
           position: FR_Lyon,
           map: map,
           title: 'Lyon, France'
         });
-        var marker = new google.maps.Marker({
+        var marker_lhv = new google.maps.Marker({
           position: FR_LeHavre,
           map: map,
           title: 'Le Havre, France'
         });
-        var marker = new google.maps.Marker({
+        var marker_cmg = new google.maps.Marker({
           position: FR_Compiegne,
           map: map,
           title: 'Compiègne, France'
         });
-        var marker = new google.maps.Marker({
+        var marker_ang = new google.maps.Marker({
           position: FR_Angouleme,
           map: map,
           title: 'Angoulême, France'
         });
-        var marker = new google.maps.Marker({
+        var marker_lar = new google.maps.Marker({
           position: FR_LaRochelle,
           map: map,
           title: 'La Rochelle, France'
         });
-        var marker = new google.maps.Marker({
-          position: FR_Rennes,
-          map: map,
-          title: 'Rennes, France'
-        });
-        var marker = new google.maps.Marker({
+        
+        var marker_rou = new google.maps.Marker({
           position: FR_Rouen,
           map: map,
           title: 'Rouen, France'
         });
+
+        var marker_ren = new google.maps.Marker({
+          position: FR_Rennes,
+          map: map,
+          title: 'Rennes, France'
+        });
         
-        function toggleBounce() {
-         if (marker.getAnimation() !== null) {
-          marker.setAnimation(null);
-         } else {
-          marker.setAnimation(google.maps.Animation.BOUNCE);
-         }
+        var markers = [marker_lv, marker_mb, marker_sfo, marker_ok, marker_pdx, marker_stl, marker_jfk, marker_chi, marker_chm, marker_ldn, marker_ber, marker_vin, marker_flr, marker_pia, marker_inv, marker_elg, marker_krk, marker_ams, marker_brg, marker_prs, marker_nnt, marker_bdx, marker_lll, marker_mrs, marker_lyn, marker_lhv, marker_cmg, marker_ang, marker_lar, marker_rou, marker_ren];
+        
+        var city_index = 0;
+
+        for (city_index = 0; city_index < markers.length; city_index++){
+          markers[city_index].addListener('load', markers[city_index].setAnimation(google.maps.Animation.DROP)); 
         }
-        
+
       }
+
+
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFflT836XcAinjHQhp-JfM3piRcP7QmTU&callback=initMap" async defer></script>
-   </div>
+   <!-- </div> -->
   </section>
 
   <!-- Footer -->
