@@ -415,6 +415,15 @@
     <script>
       var map;
       
+      var US_SFO = { lat: 37.774929, lng: -122.419418 };
+      var US_Oakland = { lat: 37.804363, lng: -122.271111 };
+      var US_Berkeley = { lat: 37.871593, lng: -122.272743 };
+      var US_PDX = { lat: 45.512230, lng: -122.658722 };
+      var US_SEA = { lat: 47.606209, lng: -122.332069 };
+      var US_JFK = { lat: 40.712776, lng: -74.005974 };
+      var US_OHA = { lat: 41.878113, lng: -87.629799 };
+      var US_Champaign = { lat: 40.116329, lng: -88.243523 };
+      
       var UE_London = { lat: 51.507351, lng: -0.127758 };
       var UE_Berlin = { lat: 52.520008, lng: 13.404954 };
       var UE_Vienne = { lat: 48.208176, lng: 16.373819 };
@@ -450,42 +459,42 @@
         }
         
         var marker = new google.maps.Marker({
-          position: { lat: 37.774929, lng: -122.419418 },
+          position: US_SFO,
           map: map,
           title: 'San Francisco, CA, USA'
         });
         var marker = new google.maps.Marker({
-          position: { lat: 37.804363, lng: -122.271111 },
+          position: US_Oakland,
           map: map,
           title: 'Oakland, CA, USA'
         });
         var marker = new google.maps.Marker({
-          position: { lat: 37.871593, lng: -122.272743 },
+          position: US_Berkeley,
           map: map,
           title: 'Berkeley, CA, USA'
         });
         var marker = new google.maps.Marker({
-          position: { lat: 45.512230, lng: -122.658722 },
+          position: US_PDX,
           map: map,
           title: 'Portland, OR, USA'
         });
         var marker = new google.maps.Marker({
-          position: { lat: 47.606209, lng: -122.332069 },
+          position: US_SEA,
           map: map,
           title: 'Seattle, WA, USA'
         });
         var marker = new google.maps.Marker({
-          position: { lat: 40.712776, lng: -74.005974 },
+          position: US_JFK,
           map: map,
           title: 'New York, NY, USA'
         });
         var marker = new google.maps.Marker({
-          position: { lat: 41.878113, lng: -87.629799 },
+          position: US_OHA,
           map: map,
           title: 'Chicago, IL, USA'
         });
         var marker = new google.maps.Marker({
-          position: { lat: 40.116329, lng: -88.243523 },
+          position: US_Champaign,
           map: map,
           title: 'Champaign, IL, USA'
         });
