@@ -447,7 +447,7 @@
 
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: { lat: 36, lng: 39 },
+          center: { lat: 40, lng: -35 },
           zoom: 3
         });
              
@@ -455,11 +455,13 @@
           position: US_SFO,
           map: map,
           title: 'San Francisco, CA, USA'
+          animation: google.maps.Animation.DROP,
         });
         var marker = new google.maps.Marker({
           position: US_Oakland,
           map: map,
           title: 'Oakland, CA, USA'
+          animation: google.maps.Animation.DROP,
         });
         var marker = new google.maps.Marker({
           position: US_Berkeley,
