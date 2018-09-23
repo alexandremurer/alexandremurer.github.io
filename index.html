@@ -87,17 +87,22 @@
         </ul>
 
         <div class="btn-group btn-group-toggle" id="language-buttons">
-
-          <label class="btn btn-warning" id="french-btn">
-            <input type="radio" name="language_options" id="french" autocomplete="off" checked> FR
+        
+          <label class="btn btn-warning">
+            <input type="radio" name="language_options" autocomplete="off" checked> FR
           </label>
-
-          <label class="btn btn-light" id="english-btn">
-            <a href="https://alexandremurer.github.io/en" id="english">
-              <input type="radio" name="language_options"  autocomplete="off" > EN
-            </a>
+        
+          <label class="btn btn-light" onclick="navigateToEN()">
+            <!-- <a href="https://alexandremurer.github.io" id="english"> -->
+              <input type="radio" name="language_options" id="english" autocomplete="off"> EN
+            <!-- </a> -->
           </label>
-
+        
+          <script>
+            function navigateToEN() {
+              window.location.href = "https://alexandremurer.github.io/en";
+            }
+          </script>
         </div>
 
       </div>

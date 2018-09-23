@@ -28,11 +28,7 @@ a {
   color: rgb(192,0,0);
 }
 
-#french {
-  color: rgb(48, 47, 64);
-}
-
-#english {
+#french #english{
   color: rgb(48, 47, 64);
 }
 
