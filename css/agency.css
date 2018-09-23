@@ -24,8 +24,18 @@ p {
   line-height: 1.75;
 }
 
+
+
 a {
   color: rgb(192,0,0);
+}
+
+#french {
+  color: white;
+}
+
+#english {
+  color: white;
 }
 
 a:hover {
@@ -755,3 +765,9 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   /* border-color: aqua; */
   /* border-width: 20px; */
 }
+
+#language-buttons {
+  padding: 1.1em 1em !important;
+}
+
+
