@@ -410,6 +410,15 @@
       var US_OHA = { lat: 41.878113, lng: -87.629799 };
       var US_Champaign = { lat: 40.116329, lng: -88.243523 };
       var US_NOLA = { lat: 29.950801, lng: -90.075879 };
+      var US_Indianapolis = { lat: 39.768402, lng: -86.158066 };
+	  var US_Cincinnati = { lat: 39.103119, lng: -84.512016 };
+	  var US_Covington = { lat: 39.083698, lng: -84.508522 };
+	  var US_Columbus = { lat: 39.961178, lng: -82.998795 };
+	  var US_Toronto = { lat: 36.162663, lng: -86.781601 };
+	  var US_Boston = { lat: 42.360081, lng: -71.058884 };
+
+	  var CA_Montreal = { lat: 45.509079, lng: -73.553372 };
+	  var CA_Toronto = { lat: 43.652973, lng: -79.382649 };
 
       var UE_London = { lat: 51.507351, lng: -0.127758 };
       var UE_Berlin = { lat: 52.520008, lng: 13.404954 };
@@ -496,6 +505,47 @@
 		  position: US_NOLA,
 		  map: map,
 		  title: 'New Orleans, LA, USA'
+		});
+		var marker_ind = new google.maps.Marker({
+		  position: US_Indianapolis,
+		  map: map,
+		  title: 'Indianapolis, IN, United States'
+		});
+		var marker_cin = new google.maps.Marker({
+		  position: US_Cincinnati,
+		  map: map,
+		  title: 'Cincinnati, OH, United States'
+		});
+		var marker_cov = new google.maps.Marker({
+		  position: US_Covington,
+		  map: map,
+		  title: 'Covington, KY, United States'
+		});
+		var marker_col = new google.maps.Marker({
+		  position: US_Colombus,
+		  map: map,
+		  title: 'Colombus, OH, United States'
+		});
+		var marker_nas = new google.maps.Marker({
+		  position: US_Nashville,
+		  map: map,
+		  title: 'Nashville, TN, United States'
+		});
+		var marker_bos = new google.maps.Marker({
+		  position: US_Boston,
+		  map: map,
+		  title: 'Boston, MA, United States'
+		});
+
+		var marker_mtl = new google.maps.Marker({
+		  position: CA_Montreal,
+		  map: map,
+		  title: 'Montréal, Canada'
+		});
+		var marker_tto = new google.maps.Marker({
+		  position: CA_Toronto,
+		  map: map,
+		  title: 'Toronto, Canada'
 		});
 
         var marker_ldn = new google.maps.Marker({
@@ -612,7 +662,7 @@
           title: 'Rennes, France'
         });
 
-        var markers = [marker_lv, marker_mb, marker_sfo, marker_ok, marker_bk, marker_pdx, marker_stl, marker_jfk, marker_chi, marker_chm, marker_nol, marker_ldn, marker_ber, marker_vin, marker_flr, marker_pia, marker_inv, marker_elg, marker_krk, marker_ams, marker_brg, marker_prs, marker_nnt, marker_bdx, marker_lll, marker_mrs, marker_lyn, marker_lhv, marker_cmg, marker_ang, marker_lar, marker_rou, marker_ren];
+        var markers = [marker_lv, marker_mb, marker_sfo, marker_ok, marker_bk, marker_pdx, marker_stl, marker_jfk, marker_chi, marker_chm, marker_nol, marker_ldn, marker_ber, marker_vin, marker_flr, marker_pia, marker_inv, marker_elg, marker_krk, marker_ams, marker_brg, marker_prs, marker_nnt, marker_bdx, marker_lll, marker_mrs, marker_lyn, marker_lhv, marker_cmg, marker_ang, marker_lar, marker_rou, marker_ren, marker_tto, marker_mtl, marker_ind, marker_cin, marker_cov, marker_col, marker_nas, marker_bos];
 
         var city_index = 0;
 
@@ -631,23 +681,18 @@
 
   <!--
 	var US_Detroit = { lat: 42.329445, lng: -83.045164 };
-	var CAN_Montreal = { lat: 45.509079, lng: -73.553372 };
-	var CAN_Toronto = { lat: 43.652973, lng: -79.382649 };
+
+	var US_xxx = { lat: 43.652973, lng: -79.382649 };
 
 	var marker_det = new google.maps.Marker({
 	position: US_Detroit,
 	map: map,
 	title: 'Detroit, MI, USA'
 
-	var marker_mtl = new google.maps.Marker({
-	position: CAN_Montreal,
+	var marker_bos = new google.maps.Marker({
+	position: US_Boston,
 	map: map,
-	title: 'Montréal, Canada'
-
-	var marker_tto = new google.maps.Marker({
-	position: CAN_Toronto,
-	map: map,
-	title: 'Toronto, Canada'
+	title: 'Boston, United States'
   -->
 
   <!-- Footer -->
