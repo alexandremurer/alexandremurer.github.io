@@ -37,7 +37,7 @@ a:hover {
 }
 
 .text-primary {
-  color: #fed136 !important;
+  color: #e59f3b !important;
 }
 
 h1,
@@ -108,12 +108,12 @@ section h3.section-subheading {
 }
 
 ::-moz-selection {
-  background: #fed136;
+  background: #e59f3b;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fed136;
+  background: #e59f3b;
   text-shadow: none;
 }
 
@@ -130,7 +130,7 @@ img::-moz-selection {
 }
 
 #mainNav {
-  background-color: #302f40;
+  background-color: #4e7e55;
 }
 
 #mainNav .navbar-toggler {
@@ -140,12 +140,12 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #fed136;
+  background-color: #e59f3b;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 #mainNav .navbar-brand {
-  color: #fed136;
+  color: #e59f3b;
   font-family: 'Raleway', sans-serif, 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   margin-right: 20px;
 }
@@ -164,7 +164,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: #e59f3b;
 }
 
 @media (min-width: 992px) {
@@ -187,7 +187,7 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #302f40;
+    background-color: #4e7e55;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -397,7 +397,7 @@ header.masthead .intro-text .intro-heading {
   /* IE 9 */
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  background-color: #302f40;
+  background-color: #4e7e55;
 }
 
 .portfolio-modal .close-modal .lr .rl {
@@ -408,7 +408,7 @@ header.masthead .intro-text .intro-heading {
   /* IE 9 */
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
-  background-color: #302f40;
+  background-color: #4e7e55;
 }
 
 .timeline {
@@ -620,7 +620,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 section#contact {
-  background-color: #302f40;
+  background-color: #4e7e55;
   background-image: url("../img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -648,7 +648,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-  border-color: #fed136;
+  border-color: #e59f3b;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -718,7 +718,7 @@ ul.social-buttons li a {
   color: white;
   border-radius: 100%;
   outline: none;
-  background-color: #302f40;
+  background-color: #4e7e55;
 }
 
 ul.social-buttons-top li a {
