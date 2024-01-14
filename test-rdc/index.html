@@ -46,7 +46,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#concept">Histoire</a>
+            <a class="nav-link js-scroll-trigger" href="#histoire">Histoire</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#2024">Edition 2024</a>
@@ -81,7 +81,7 @@
   </header>
 
   <!-- Histoire -->
-  <section id="Experiences" class="bg-light">
+  <section id="histoire" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -92,22 +92,47 @@
     </div>
   </section>
 
-  <!-- About /// blanked -->
-  
-  
+  <!-- Equipe -->
+  <section class="page-section bg-light" id="equipe">
+      <div class="container">
+          <div class="text-center">
+              <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+              <h3 class="section-subheading text-muted">lorem ipsum pour l'équipe...</h3>
+          </div>
+          <div class="row">
+              <div class="col-lg-4">
+                  <div class="team-member">
+                      <img class="mx-auto rounded-circle" src="assets/img/team/AMU.jpg" alt="..." />
+                      <h4>AM</h4>
+                      <p class="text-muted">Lead Marketer</p>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="team-member">
+                      <img class="mx-auto rounded-circle" src="assets/img/team/JDE.jpg" alt="..." />
+                      <h4>JD</h4>
+                      <p class="text-muted">Lead Designer</p>
+                  </div>
+              </div>
+              <div class="col-lg-4">
+                  <div class="team-member">
+                      <img class="mx-auto rounded-circle" src="assets/img/team/XJO.jpg" alt="..." />
+                      <h4>XJO</h4>
+                      <p class="text-muted">Lead Developer</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
-  <!-- Portfolio Grid /// blanked -->
-  
-  
-
-  <!-- Urbex section -->
-  <section id="itineraire" class="map-section">
+  <!-- Activités -->
+  <section id="activites" class="map-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Itinéraire 2024</h2>
           <h3 class="section-subheading text-muted">
-            lorem ipsum de l'itinéraire...
+            lorem ipsum des activités... mais problème d'API Google ?
           </h3>
         </div>
       </div>
@@ -122,15 +147,9 @@
       var FR_Paris = { lat: 48.856613, lng: 2.352222 };
       var FR_Nantes = { lat: 47.218372, lng: -1.553621 };
       var FR_Bordeaux = { lat: 44.837788, lng: -0.579180 };
-      var FR_Lille = { lat: 50.629250, lng: 3.057256 };
-      var FR_Marseille = { lat: 43.296482, lng: 5.369780 };
-      var FR_Lyon = { lat: 45.764042, lng: 4.835659 };
       var FR_LeHavre = { lat: 49.494370, lng: 0.107929 };
       var FR_Compiegne = { lat: 49.417816, lng: 2.826145 };
       var FR_Angouleme = { lat: 46.160308, lng: -1.151153 };
-      var FR_LaRochelle = { lat: 45.648372, lng: 0.156237 };
-      var FR_Rennes = { lat: 48.110166, lng: -1.680224 };
-      var FR_Rouen = { lat: 49.435837, lng: 1.095484 };
 
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
@@ -153,21 +172,6 @@
           map: map,
           title: 'Bordeaux, France'
         });
-        var marker_lll = new google.maps.Marker({
-          position: FR_Lille,
-          map: map,
-          title: 'Lille, France'
-        });
-        var marker_mrs = new google.maps.Marker({
-          position: FR_Marseille,
-          map: map,
-          title: 'Marseille, France'
-        });
-        var marker_lyn = new google.maps.Marker({
-          position: FR_Lyon,
-          map: map,
-          title: 'Lyon, France'
-        });
         var marker_lhv = new google.maps.Marker({
           position: FR_LeHavre,
           map: map,
@@ -183,25 +187,8 @@
           map: map,
           title: 'Angoulême, France'
         });
-        var marker_lar = new google.maps.Marker({
-          position: FR_LaRochelle,
-          map: map,
-          title: 'La Rochelle, France'
-        });
 
-        var marker_rou = new google.maps.Marker({
-          position: FR_Rouen,
-          map: map,
-          title: 'Rouen, France'
-        });
-
-        var marker_ren = new google.maps.Marker({
-          position: FR_Rennes,
-          map: map,
-          title: 'Rennes, France'
-        });
-
-        var markers = [marker_lv, marker_mb, marker_sfo, marker_ok, marker_bk, marker_pdx, marker_stl, marker_jfk, marker_chi, marker_chm, marker_nol, marker_ind, marker_cin, marker_cov, marker_col, marker_nas, marker_bos, marker_tto, marker_mtl, marker_dub, marker_ldn, marker_ber, marker_vin, marker_flr, marker_pia, marker_inv, marker_elg, marker_krk, marker_ams, marker_brg, marker_atw, marker_bxl, marker_prs, marker_nnt, marker_bdx, marker_lll, marker_mrs, marker_lyn, marker_lhv, marker_cmg, marker_ang, marker_lar, marker_rou, marker_ren];
+        var markers = [marker_prs, marker_nnt, marker_bdx, marker_lhv, marker_cmg, marker_ang];
 
         var city_index = 0;
 
