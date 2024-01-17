@@ -476,7 +476,7 @@ header.masthead .intro-text .intro-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #c00000;
+  background-color: #4e7e55;
 }
 
 .timeline > li .timeline-image h4 {
@@ -735,7 +735,7 @@ ul.social-buttons-top li a {
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #c00000;
+  background-color: #4e7e55;
 }
 
 .fa-id-card {
