@@ -411,14 +411,6 @@ header.masthead .intro-text .intro-heading {
   background-color: #4e7e55;
 }
 
-#img1{
-    width: 100%;
-    height: auto;
-    margin: auto;
-    display: block;
-    background-size:20%;
-}
-
 .timeline {
   position: relative;
   padding: 0;
